@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+</head>
+
+<body>
+    <div class="style_page">
+    <div class="form_wrapper">
+        <div class="glass"></div>
+        <h1>Login</h1>
+        <form id="loginForm">
+            <div class="form_row">
+                <label for="login">User name:</label>
+                <input required name="login" id="login" type="email" />
+            </div>
+            <div class="form_row">
+                <label for="password">Password:</label>
+                <input required name="password" id="password" type="password" />
+            </div>
+            <div class="form_actions">
+            <button type="submit">send</button>
+        </div>
+        </form>
+    </div>
+</div>
+
+
+
+<div class="modal js-modal">
+    <h1 class="modal_title">Привет!</h1>
+    <p class="modal_content"></p>
+    <button class="js-close">Close</button>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>

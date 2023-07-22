@@ -1,0 +1,133 @@
+:root {
+    --white: #ffffff;
+    --background-color-primary: #002D62;
+    --background-color-secondary: #FEBE10;
+}
+
+body {
+
+    background: url('https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&w=1000&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form_wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding: 50px;
+    width: 400px;
+
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.glass {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: var(--white);
+    opacity: 0.5;
+    filter: blur(0.5px);
+    z-index: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    z-index: 1;
+}
+
+h1 {
+    z-index: 1;
+    margin: 0;
+    color: var(--background-color-primary);
+}
+
+.form_row {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+input:-webkit-autofill {
+    transition: all 5000s ease-in-out 0s;
+}
+
+input:hover,
+input:focus {
+    outline: none;
+    border-bottom: 2px solid var(--background-color-primary);
+}
+
+.form_actions {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+}
+
+button[type="submit"],
+.js-close {
+    width: 100%;
+    color: var(--white);
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background: var(--background-color-primary);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+
+
+}
+
+button[type="submit"]:hover,
+.js-close:hover {
+    background: var(--background-color-secondary);
+    color: var(--background-color-primary);
+    transition: 0.3s;
+}
+
+.form_row:hover {
+    color: var(--background-color-primary);
+    font-weight: bold;
+
+}
+
+
+
+
+.modal {
+    background-color: #fff;
+    padding: 2em 3em;
+    text-align: center;
+    border-radius: .5em;
+    display: none;
+    position: absolute;
+    z-index: 100;
+}
